@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05070b" />
+    <meta
+      name="description"
+      content="JARQS AI LAB is a public AI operations lab by Jarek Koscielecki, focused on human-led systems for monitoring, automation, and process intelligence."
+    />
+    <meta property="og:title" content="JARQS AI LAB" />
+    <meta
+      property="og:description"
+      content="Human-led, AI-assisted systems for operations, monitoring, automation, and process intelligence."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>JARQS AI LAB</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <canvas id="lab-canvas" aria-hidden="true"></canvas>
+    <div class="ambient ambient-cyan" aria-hidden="true"></div>
+    <div class="ambient ambient-magenta" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="JARQS AI LAB home">
+        <span class="brand-mark"></span>
+        <span>JARQS AI LAB</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#principles">Principles</a>
+        <a href="#modules">Modules</a>
+        <a href="#method">Method</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Operations Lab</p>
+          <h1>
+            Human-led systems for
+            <span class="accent-text">AI-assisted operations.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Monitoring, automation, data aggregation, and process intelligence
+            shaped by practical IT experience and careful AI collaboration.
+          </p>
+
+          <div class="status-row" aria-label="Lab status">
+            <span class="status-chip">self-hosted mindset</span>
+            <span class="status-chip">process-first</span>
+            <span class="status-chip">monitored systems</span>
+            <span class="status-chip">human accountable</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#modules">Explore the lab</a>
+            <a class="button button-ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <aside class="system-panel" aria-label="System summary">
+          <div class="panel-topline">
+            <span>lab telemetry</span>
+            <span class="live-dot">online</span>
+          </div>
+          <div class="terminal" aria-live="polite">
+            <div class="terminal-line">
+              <span class="prompt">&gt;</span>
+              <span id="ticker-text">initializing operations loop</span>
+            </div>
+          </div>
+          <div class="signal-stack">
+            <div class="signal-row">
+              <span>observe</span>
+              <span class="bar"><i style="--w: 82%"></i></span>
+            </div>
+            <div class="signal-row">
+              <span>design</span>
+              <span class="bar"><i style="--w: 74%"></i></span>
+            </div>
+            <div class="signal-row">
+              <span>audit</span>
+              <span class="bar"><i style="--w: 91%"></i></span>
+            </div>
+            <div class="signal-row">
+              <span>iterate</span>
+              <span class="bar"><i style="--w: 68%"></i></span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section about" aria-labelledby="about-title">
+        <div class="section-kicker">About</div>
+        <div class="section-grid">
+          <h2 id="about-title">Built by Jarek Koscielecki.</h2>
+          <div class="section-copy">
+            <p>
+              I build small, focused operational tools with AI as a design and
+              implementation partner. My background is in IT systems, service
+              operations, process architecture, and practical automation.
+            </p>
+            <p>
+              This lab documents a private ecosystem of experiments around
+              monitoring, decision support, data aggregation, and everyday
+              workflows. Public concepts, private operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="principles" aria-labelledby="principles-title">
+        <div class="section-kicker">Principles</div>
+        <div class="section-heading">
+          <h2 id="principles-title">Operational rules for useful AI systems.</h2>
+          <p>
+            The lab favors tools that are explainable, monitored, bounded, and
+            shaped by real use.
+          </p>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <h3>Small tools over monoliths</h3>
+            <p>Focused systems are easier to understand, audit, and evolve.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <h3>Monitoring from day one</h3>
+            <p>Every useful tool needs health, alerts, and operational visibility.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <h3>Human control over automation</h3>
+            <p>AI can accelerate work, but decisions stay accountable.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04</span>
+            <h3>Private by default</h3>
+            <p>Personal infrastructure should expose only what is intentional.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="modules" aria-labelledby="modules-title">
+        <div class="section-kicker">Lab Modules</div>
+        <div class="section-heading">
+          <h2 id="modules-title">A private ecosystem, described publicly.</h2>
+          <p>
+            These are conceptual descriptions only. Private deployments are not
+            linked from this site.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">00</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Harem</h3>
+            <p>Ecosystem console for apps, status, backlog, and operational overview.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">01</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Klaudia</h3>
+            <p>Multi-model AI interface for structured conversations and experiments.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">02</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Szynka</h3>
+            <p>Rail delay monitor with notifications and operational safeguards.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">03</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Agnes</h3>
+            <p>News intelligence and source aggregation pipeline.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">04</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Medea</h3>
+            <p>Appointment monitoring workflow for availability checks and alerts.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-head">
+              <span class="module-code">06</span>
+              <span class="module-pulse"></span>
+            </div>
+            <h3>Penny</h3>
+            <p>Price intelligence assistant for tracking offers and market signals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section method" id="method" aria-labelledby="method-title">
+        <div class="section-kicker">Method</div>
+        <div class="section-heading">
+          <h2 id="method-title">A loop for building practical tools.</h2>
+        </div>
+        <ol class="method-list">
+          <li><span>Observe</span><p>Find a repetitive, fragile, or time-sensitive workflow.</p></li>
+          <li><span>Design</span><p>Model the process, data sources, risks, and failure modes.</p></li>
+          <li><span>Build</span><p>Create a small tool with clear boundaries and simple deployment.</p></li>
+          <li><span>Audit</span><p>Review quality, safety, cost, and operational risk before expanding.</p></li>
+          <li><span>Monitor</span><p>Add health checks, alerts, and feedback loops.</p></li>
+          <li><span>Iterate</span><p>Improve based on real use, not imagined scale.</p></li>
+        </ol>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2 id="contact-title">AI-assisted operations, built carefully.</h2>
+        </div>
+        <p>
+          Want to talk about practical AI workflows, monitoring, or process automation?
+        </p>
+        <a class="contact-link" href="mailto:j.koscielecki@gmail.com">
+          j.koscielecki@gmail.com
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>JARQS AI LAB</span>
+      <span>Human-led. AI-assisted. Process-first.</span>
+    </footer>
+  </body>
+</html>
