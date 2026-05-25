@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JARQS AI LAB">
+  <rect width="64" height="64" rx="12" fill="#05070b"/>
+  <path d="M18 18h28v28H18z" fill="none" stroke="#00e5ff" stroke-width="3"/>
+  <path d="M32 13v38M13 32h38" stroke="#ff2bd6" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="6" fill="#58ff9a"/>
+</svg>
