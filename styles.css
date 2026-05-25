@@ -564,6 +564,12 @@ h3 {
   color: #c1d0df;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+}
+
 .contact-link {
   display: inline-flex;
   width: fit-content;
