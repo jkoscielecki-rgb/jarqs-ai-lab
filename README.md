@@ -5,6 +5,9 @@ Static public website for `ai.jarqs.net`.
 The site is a lightweight cyberpunk-inspired AI operations lab and personal
 business card for Jarek Koscielecki.
 
+Default language is English. A Polish version is available through the EN/PL
+toggle in the header and is stored locally in the browser.
+
 ## Scope
 
 - Static HTML, CSS, and JavaScript only.
@@ -50,7 +53,7 @@ to `https://ai.jarqs.net`.
 ```text
 index.html          Main page
 styles.css          Visual system and layout
-main.js             Canvas background and ticker animation
+main.js             Canvas background, ticker animation, and EN/PL language toggle
 assets/favicon.svg  Browser icon
 assets/og-card.svg  Social preview image
 _headers            Cloudflare Pages security headers
