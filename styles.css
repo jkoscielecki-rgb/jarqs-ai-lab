@@ -591,6 +591,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.footer-c64-link {
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+}
+.footer-c64-link:hover {
+  opacity: 1;
+  color: #67B6BD;
+}
+
 @keyframes grid-drift {
   from {
     background-position: 0 0;
