@@ -592,16 +592,17 @@ h3 {
 }
 
 .footer-c64-link {
-  color: var(--muted);
+  color: #67B6BD;
   text-decoration: none;
-  opacity: 0.4;
-  transition: opacity 0.2s;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
   font-family: var(--mono);
   font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 .footer-c64-link:hover {
   opacity: 1;
-  color: #67B6BD;
+  color: #94E089;
 }
 
 @keyframes grid-drift {
